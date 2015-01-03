@@ -5,7 +5,7 @@ It takes one or more input files, picks a prefix to kick off the generated sente
 
 I haven't worked on this code since submitting it for grading. Feel free to use as you please. Pull requests welcome. 
 
-Tested with Python 2.7.6. Python 3 or higher may not run do to the use of raw_input() function, but I haven't tested that.
+Currently it's broken, at least on Python3. Getting an incompatible seed error.
 
 *I hope to change tabs to spaces soon - I didn't know any better at the time.*
 
