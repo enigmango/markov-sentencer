@@ -38,7 +38,7 @@ def processFiles(fnames):
 	fileCounter = 0 # number of files we will be parsing - they all get added to the precious
 	for filename in fnames:
 		fileCounter = fileCounter + 1
-		print "Processing file " + str(fileCounter) + "/" + str(len(fnames)) + "..."
+		print("Processing file " + str(fileCounter) + "/" + str(len(fnames)) + "...")
 		
 		fullText = [] # tracking lines in this file
 
@@ -58,7 +58,7 @@ def processFiles(fnames):
 				prefixDict[prefix] = [fullText[i + prefLen]]# create entry in dictionary (must initialize it was a list
 		# for entry in prefixDict: # debug
 			#print entry + " >>> " + str(prefixDict[entry]) # debug
-		print "done with file: " + filename
+		print("done with file: " + filename)
 		f.close()
 
 ''' picking seed '''
@@ -190,13 +190,13 @@ else:
 	seed = pickSeed()
 	
 if prefLen != len(seed.split()): # prefix length doesn't match size of seed
-	print "Error: Number of words in seed must be equal to prefix length."
+	print("Error: Number of words in seed must be equal to prefix length.")
 	exit()
 	
 try:
 	markovOut = makeMarkov(seed)
 except:
-	print 'Error: Incompatible seed ("' + seed + '" not found in dictionary).'
+	print('Error: Incompatible seed ("' + seed + '" not found in dictionary).')
 	exit()
 finalOut = textCleanup(markovOut, customSeed)
 
@@ -204,5 +204,5 @@ if listOut == "y":
 	fDict = open("dict.txt", 'w')
 	fDict.write(str(prefixDict))
 	fDict.close()
-print finalOut
-print "Time: " + str(time.time() - beginTime) + " seconds"
+print(finalOut)
+print("Time: " + str(time.time() - beginTime) + " seconds")
