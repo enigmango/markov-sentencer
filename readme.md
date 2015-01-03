@@ -7,6 +7,8 @@ I haven't worked on this code since submitting it for grading. Feel free to use 
 
 Tested with Python 2.7.6. Python 3 or higher may not run do to the use of raw_input() function, but I haven't tested that.
 
+*I hope to change tabs to spaces soon - I didn't know any better at the time.*
+
 # Operation
 
 > $ **markov.py** *path/To/TextFile* [*path/To/AnotherTextFile*]...
