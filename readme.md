@@ -12,11 +12,11 @@ Feel free to use as you please. Pull requests welcome.
 
 # Operation
 
-> $ python markov.py *path/To/TextFile* [*path/To/AnotherTextFile*]...
+`python ./markov.py *path/To/TextFile* [*path/To/AnotherTextFile*]...`
 
  **or**
 
-> $ python markov.py CUSTOM *path/To/TextFile* [*path/To/AnotherTextFile*]...
+`python ./markov.py CUSTOM *path/To/TextFile* [*path/To/AnotherTextFile*]...`
 
 # Parameters
 * Any number of input text files can be used.
