@@ -5,19 +5,18 @@ It takes one or more input files, picks a prefix to kick off the generated sente
 
 I haven't worked on this code since submitting it for grading. Feel free to use as you please. Pull requests welcome. 
 
-Currently it's broken, at least on Python3. Getting an incompatible seed error.
-
-*I hope to change tabs to spaces soon - I didn't know any better at the time.*
+Tested and working with Python 3.4.2 on ArchLinux.
 
 # Operation
 
-> $ **markov.py** *path/To/TextFile* [*path/To/AnotherTextFile*]...
+> $ python markov.py *path/To/TextFile* [*path/To/AnotherTextFile*]...
 
  **or**
 
-> $ **markov.py** * 
+> $ python markov.py CUSTOM *path/To/TextFile* [*path/To/AnotherTextFile*]...
 
 # Parameters
 * Any number of input text files can be used.
 * Any parameters are assumed to point to text files unless an asterisk is used.
-* An asterisk as the only parameter will prompt for a custom seed, prefix length, and number of sentences. 
+* Placing the word "CUSTOM" before any file parameters will prompt for a custom seed, prefix length, and number of sentences.
+  * Anything prompted for is optional - simply pressing `Enter` at the prompt will use the default value.
